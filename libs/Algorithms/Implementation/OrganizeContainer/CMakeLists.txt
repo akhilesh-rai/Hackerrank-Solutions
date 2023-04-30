@@ -1,0 +1,2 @@
+add_library(OrganizeContainer STATIC OrganizeContainer.cpp OrganizeContainer.h)
+target_include_directories(OrganizeContainer PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
