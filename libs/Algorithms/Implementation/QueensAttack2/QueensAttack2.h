@@ -8,7 +8,7 @@
 #ifndef QUEENSATTACK2_H
 #define QUEENSATTACK2_H
 
-#include <cstdint> //uint16_t
+#include <cstdint> //for uint16_t
 
 //#define DEBUG /*uncomment for some debug info*/
 
@@ -25,22 +25,30 @@ constexpr uint16_t COL = 1u;
 
 using namespace std;
 
+/**
+* @brief Enumeration for Possible directions the Queen can move along.
+*/
 enum class Direction
 {
-    NORTH,
-    SOUTH,
-    EAST,
-    WEST,
-    NORTHWEST,
-    NORTHEAST,
-    SOUTHWEST,
-    SOUTHEAST
+    NORTH,      /**< NORTH / UPWARDS */
+    SOUTH,      /**< SOUTH / DOWNWARDS */
+    EAST,       /**< EAST / RIGHT */
+    WEST,       /**< WEST / LEFT */
+    NORTHWEST,  /**< NORRTHWEST / UPWARDS + LEFT */
+    NORTHEAST,  /**< NORTHEAST  / UPWARDS + RIGHT */
+    SOUTHWEST,  /**< SOUTHWEST  / UPWARDS + LEFT */
+    SOUTHEAST   /**< SOUTHEAST  / UPWARDS + RIGHT */
 };
 
 /**
 *@brief Call this function to compute number of cells the Queen can move to.
 *
-*
+* @details  
+* Why is this done?
+* @image html indexCorrection.png
+* To transform borad from where (1,1) is to bottom left (Hackerranks view) to top left and shift to (0,0) base
+* @image html transformBoard.png
+* 
 * @param n         size of chess board (nXn)
 * @param k         num of obstacles in the board (also same as obstacles.size() )
 * @param r_q       row number of queen's current pos [1..n]

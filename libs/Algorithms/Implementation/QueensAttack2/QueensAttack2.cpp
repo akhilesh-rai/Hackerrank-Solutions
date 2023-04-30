@@ -1,10 +1,22 @@
+/**
+ * @file QueensAttack2.cpp
+ * @brief Solution to the hacker rank question : Queens Attack 2 is implemented here.
+ */
 #include "QueensAttack2.h"
 
-/* Local Function Declarations*/
+/****************************** Local Function Declarations *******************************************/
+/**
+* @brief Computes num of free cells in given direction.
+* @param dir        The type of Direction 
+* @param chessboard Chess board matrix
+* @param queenPos   Current queen position in the board (converted!)
+*
+* @return num of free cells available for the queen to move in the Direction dir
+*/
 static uint16_t numCellFree(Direction dir, vector<vector<uint16_t>>& chessboard, vector<uint16_t> queenPos);
 
 
-/* Function Definitions*/
+/****************************** Function Definitions **************************************************/
 uint16_t queensAttack(uint16_t n, uint16_t k, uint16_t r_q, uint16_t c_q, vector<vector<uint16_t>> obstacles)
 {
     uint16_t numCells = 0;
