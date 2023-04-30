@@ -1,0 +1,34 @@
+# Visual Studio files
+*.vcxproj
+*.vcxproj.filters
+*.sln
+*.vcxproj.user
+*.vcproj
+
+# CMake build directories
+/CMakeFiles
+/CMakeCache.txt
+/build
+
+# Build output directories
+/bin
+/Debug
+/Release
+/x64
+
+# Executables and object files
+*.exe
+*.out
+*.o
+*.obj
+*.log
+*.tlog
+*.pdb
+*.stamp
+*.depend
+*.recipe
+*.ilk
+*.lib
+
+# Visual Studio specific folders
+.vs
