@@ -38,24 +38,36 @@ uint16_t queensAttack(uint16_t n, uint16_t k, uint16_t r_q, uint16_t c_q, vector
     }
 
     /* Print Board*/
-    /*for (int i = 0; i < n; i++)
+#ifdef DEBUG
+    for (int i = 0; i < n; i++)
     {
         for (int j = 0; j < n; j++)
         {
-            cout << chessboard[i][j] << " ";
+            if (i == queenRow && j == queenCol)
+            {
+                cout << "*" << " "; /*Mark Queens current pos*/
+            }
+            else
+            {
+                cout << chessboard[i][j] << " ";
+            }
         }
         cout << endl;
-    */
+    }
+    cout << endl;
+#endif // DEBUG
 
     /* Print empty cells per direction */
-    /*cout << "NORTH: " << numCellFree(Direction::NORTH, chessboard, {queenRow ,queenCol}) << endl;
+#ifdef DEBUG
+    cout << "NORTH: " << numCellFree(Direction::NORTH, chessboard, {queenRow ,queenCol}) << endl;
     cout << "SOUTH: " << numCellFree(Direction::SOUTH, chessboard, { queenRow ,queenCol }) << endl;
     cout << "EAST: " << numCellFree(Direction::EAST, chessboard, { queenRow ,queenCol }) << endl;
     cout << "WEST: " << numCellFree(Direction::WEST, chessboard, { queenRow ,queenCol }) << endl;
     cout << "NORTHWEST: " << numCellFree(Direction::NORTHWEST, chessboard, { queenRow ,queenCol }) << endl;
     cout << "NORTHEAST: " << numCellFree(Direction::NORTHEAST, chessboard, { queenRow ,queenCol }) << endl;
     cout << "SOUTHWEST: " << numCellFree(Direction::SOUTHWEST, chessboard, { queenRow ,queenCol }) << endl;
-    cout << "SOUTHEAST: " << numCellFree(Direction::SOUTHEAST, chessboard, { queenRow ,queenCol }) << endl;*/
+    cout << "SOUTHEAST: " << numCellFree(Direction::SOUTHEAST, chessboard, { queenRow ,queenCol }) << endl;
+#endif // DEBUG
 
     numCells += numCellFree(Direction::NORTH, chessboard, { queenRow ,queenCol });
     numCells += numCellFree(Direction::SOUTH, chessboard, { queenRow ,queenCol });

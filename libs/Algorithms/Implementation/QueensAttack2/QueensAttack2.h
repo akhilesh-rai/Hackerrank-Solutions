@@ -10,6 +10,8 @@
 
 #include <cstdint> //uint16_t
 
+//#define DEBUG /*uncomment for some debug info*/
+
 constexpr uint16_t ROW = 0u;
 constexpr uint16_t COL = 1u;
 
