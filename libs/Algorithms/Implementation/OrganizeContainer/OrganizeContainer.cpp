@@ -32,6 +32,9 @@ string organizingContainers(vector<vector<int>> container)
 	cout << endl;
 #endif // DEBUG
 
+	sort(contSize.begin(), contSize.end());
+	sort(typSize.begin(), typSize.end());
+
 	bool isEqual = equal(contSize.begin(), contSize.end(), typSize.begin(), typSize.end());
 
 	if (isEqual)
