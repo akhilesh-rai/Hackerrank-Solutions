@@ -1,7 +1,10 @@
 # Hackerrank-Solutions
-## To run the examples:
- - Create Visual Studio solution:  simply run "cmake ." at root directory level. (CMake version 3.5 or greater needed)
- - Visual Studio sln file "Hackerrank-Solution.sln" is generated at root folder.
+## Building the project
+ - To build the project, navigate to the project directory in a terminal and run the following commands:  
+   mkdir build  
+   cd build  
+   cmake .. -G "Visual Studio 17 2022" -A x64     
+ - Visual Studio sln file "Hackerrank-Solution.sln" is generated at 'project/build' folder.
  
 ## Folder Structure:
     project/
