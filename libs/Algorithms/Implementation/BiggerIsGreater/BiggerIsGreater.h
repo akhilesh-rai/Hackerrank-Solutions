@@ -1,8 +1,6 @@
 /**
  * @file BiggerIsGreater.h
- * @brief Solution to the hacker rank question : Queens Attack 2 is implemented here.
- *
- *  Link: https://www.hackerrank.com/challenges/bigger-is-greater/problem
+ * @brief https://www.hackerrank.com/challenges/bigger-is-greater/problem
  */
 
 #include <iostream>

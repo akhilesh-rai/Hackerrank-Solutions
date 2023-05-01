@@ -1,8 +1,6 @@
 /**
  * @file QueensAttack2.h
- * @brief Solution to the hacker rank question : Queens Attack 2 is implemented here.
- *
- *  Link: https://www.hackerrank.com/challenges/queens-attack-2/problem
+ * @brief https://www.hackerrank.com/challenges/queens-attack-2/problem
  */
 
 #ifndef QUEENSATTACK2_H

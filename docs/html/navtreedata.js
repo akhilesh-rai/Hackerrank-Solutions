@@ -26,7 +26,7 @@ var NAVTREE =
 [
   [ "Hackerrank-Solutions", "index.html", [
     [ "Hackerrank-Solutions", "md__r_e_a_d_m_e.html", [
-      [ "To run the examples:", "md__r_e_a_d_m_e.html#autotoc_md1", null ],
+      [ "Building the project", "md__r_e_a_d_m_e.html#autotoc_md1", null ],
       [ "Folder Structure:", "md__r_e_a_d_m_e.html#autotoc_md2", null ],
       [ "Table of Contents:", "md__r_e_a_d_m_e.html#autotoc_md3", null ],
       [ "Debug Info", "md__r_e_a_d_m_e.html#autotoc_md4", null ]

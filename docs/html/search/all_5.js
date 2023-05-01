@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['north_0',['NORTH',['../_queens_attack2_8h.html#a224b9163917ac32fc95a60d8c1eec3aaa2bf8f791695c70efa9c14e6f1c326403',1,'QueensAttack2.h']]],
-  ['northeast_1',['NORTHEAST',['../_queens_attack2_8h.html#a224b9163917ac32fc95a60d8c1eec3aaa5a889abd3c291052e9dcce6adbc4092e',1,'QueensAttack2.h']]],
-  ['northwest_2',['NORTHWEST',['../_queens_attack2_8h.html#a224b9163917ac32fc95a60d8c1eec3aaa54486c15c75f9e0ada3484a7812252ff',1,'QueensAttack2.h']]]
+  ['main_0',['main',['../main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main.cpp']]],
+  ['main_2ecpp_1',['main.cpp',['../main_8cpp.html',1,'']]]
 ];

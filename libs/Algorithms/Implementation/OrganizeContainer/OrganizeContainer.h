@@ -1,8 +1,6 @@
 /**
  * @file OrganizeContainer.h
- * @brief Solution to the hacker rank question : Queens Attack 2 is implemented here.
- *
- *  Link: https://www.hackerrank.com/challenges/organizing-containers-of-balls/problem
+ * @brief https://www.hackerrank.com/challenges/organizing-containers-of-balls/problem
  */
 #ifndef ORGANIZECONTAINER_H
 #define ORGANIZECONTAINER_H

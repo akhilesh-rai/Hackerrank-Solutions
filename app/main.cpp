@@ -7,7 +7,7 @@
 #include"..\libs\Algorithms\Implementation\QueensAttack2\QueensAttack2.h"
 #include"..\libs\Algorithms\Implementation\OrganizeContainer\OrganizeContainer.h"
 #include"..\libs\Algorithms\Implementation\BiggerIsGreater\BiggerIsGreater.h"
-
+#include"..\libs\Algorithms\Implementation\GridSearch\GridSearch.h"
 
 using namespace std;
 
@@ -28,5 +28,12 @@ int main()
 
     /*Bigger is Greater*/
     //cout << biggerIsGreater("dkhc")<<endl;
+
+    /*Grid Search*/
+    vector<string> G1 = { {1,2,3,4,5},{6,7,8,9,10},{11,12,13,14,15} };
+    vector<string> P1 = { {1,3},{1,8},{1,13} };
+    cout << "Grid Search: " << gridSearch(G1, P1)<<endl;
+    vector<string> P2 = { {2,3},{7,8} };
+    cout << "Grid Search: " << gridSearch(G1, P2)<<endl<<endl;
 
 }

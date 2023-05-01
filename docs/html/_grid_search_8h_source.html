@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Hackerrank-Solutions: File Members</title>
+<title>Hackerrank-Solutions: libs/Algorithms/Implementation/GridSearch/GridSearch.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,7 +63,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('globals.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('_grid_search_8h_source.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -88,20 +88,31 @@ $(document).ready(function(){initNavTree('globals.html',''); initResizable(); })
 </div>
 </div>
 
+<div class="header">
+  <div class="headertitle"><div class="title">GridSearch.h</div></div>
+</div><!--header-->
 <div class="contents">
-<div class="textblock">Here is a list of all documented file members with links to the documentation:</div><ul>
-<li>biggerIsGreater()&#160;:&#160;<a class="el" href="_bigger_is_greater_8h.html#a652b5e9603b86cb44a6b7882ec3c3d1f">BiggerIsGreater.h</a></li>
-<li>Direction&#160;:&#160;<a class="el" href="_queens_attack2_8h.html#a224b9163917ac32fc95a60d8c1eec3aa">QueensAttack2.h</a></li>
-<li>gridSearch()&#160;:&#160;<a class="el" href="_grid_search_8h.html#a7f1e557fa66cd45abafcfde58c4f0293">GridSearch.h</a></li>
-<li>main()&#160;:&#160;<a class="el" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main.cpp</a></li>
-<li>organizingContainers()&#160;:&#160;<a class="el" href="_organize_container_8h.html#a6fd7ac1856c6105dd417fa9d70110180">OrganizeContainer.h</a></li>
-<li>queensAttack()&#160;:&#160;<a class="el" href="_queens_attack2_8cpp.html#a9d9549abff6ac3d8e3e8b12e4de4e16f">QueensAttack2.cpp</a>, <a class="el" href="_queens_attack2_8h.html#a9d9549abff6ac3d8e3e8b12e4de4e16f">QueensAttack2.h</a></li>
-</ul>
-</div><!-- contents -->
+<a href="_grid_search_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;algorithm&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">using namespace </span>std;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#ifndef GRIDSEARCH_H</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#define GRIDSEARCH_H</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keywordtype">string</span> <a class="code hl_function" href="_grid_search_8h.html#a7f1e557fa66cd45abafcfde58c4f0293">gridSearch</a>(vector&lt;string&gt; G, vector&lt;string&gt; P);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#endif </span><span class="comment">/* GRIDSEARCH_H */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="a_grid_search_8h_html_a7f1e557fa66cd45abafcfde58c4f0293"><div class="ttname"><a href="_grid_search_8h.html#a7f1e557fa66cd45abafcfde58c4f0293">gridSearch</a></div><div class="ttdeci">string gridSearch(vector&lt; string &gt; G, vector&lt; string &gt; P)</div><div class="ttdoc">Find if pattern P is found in G.</div><div class="ttdef"><b>Definition:</b> GridSearch.cpp:7</div></div>
+</div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a class="el" href="dir_6719ab1f1f7655efc2fa43f7eb574fd1.html">libs</a></li><li class="navelem"><a class="el" href="dir_f51f6313d56d4e7973f3ce021068051d.html">Algorithms</a></li><li class="navelem"><a class="el" href="dir_f4e3884f4301f7f7095f847284349a68.html">Implementation</a></li><li class="navelem"><a class="el" href="dir_f08ef7bc462d3ed998f22af066b2ea3e.html">GridSearch</a></li><li class="navelem"><a class="el" href="_grid_search_8h.html">GridSearch.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>

@@ -93,10 +93,14 @@ $(document).ready(function(){initNavTree('md__r_e_a_d_m_e.html',''); initResizab
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><h1><a class="anchor" id="autotoc_md1"></a>
-To run the examples:</h1>
+Building the project</h1>
 <ul>
-<li>Create Visual Studio solution: simply run "cmake ." at root directory level. (CMake version 3.5 or greater needed)</li>
-<li>Visual Studio sln file "Hackerrank-Solution.sln" is generated at root folder.</li>
+<li>To build the project, navigate to the project directory in a terminal and run the following commands: <br  />
+ mkdir build <br  />
+ cd build <br  />
+ cmake .. -G "Visual Studio 17 2022" -A x64 <br  />
+</li>
+<li>Visual Studio sln file "Hackerrank-Solution.sln" is generated at 'project/build' folder.</li>
 </ul>
 <h1><a class="anchor" id="autotoc_md2"></a>
 Folder Structure:</h1>
