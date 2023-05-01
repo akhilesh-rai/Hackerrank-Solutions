@@ -1,7 +1,12 @@
+/**
+ * @file main.cpp
+ * @brief Entry Point. Calls to multiple hackkerrank problems.
+ */
 #include <iostream>
 
 #include"..\libs\Algorithms\Implementation\QueensAttack2\QueensAttack2.h"
 #include"..\libs\Algorithms\Implementation\OrganizeContainer\OrganizeContainer.h"
+#include"..\libs\Algorithms\Implementation\BiggerIsGreater\BiggerIsGreater.h"
 
 
 using namespace std;
@@ -21,5 +26,7 @@ int main()
 
     cout << "Organizing container of balls: " << organizingContainers(container) << endl << endl;
 
+    /*Bigger is Greater*/
+    //cout << biggerIsGreater("dkhc")<<endl;
 
 }

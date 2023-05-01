@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['organizingcontainers_0',['organizingContainers',['../_organize_container_8h.html#a6fd7ac1856c6105dd417fa9d70110180',1,'OrganizeContainer.cpp']]]
+  ['biggerisgreater_0',['biggerIsGreater',['../_bigger_is_greater_8h.html#a652b5e9603b86cb44a6b7882ec3c3d1f',1,'BiggerIsGreater.cpp']]]
 ];

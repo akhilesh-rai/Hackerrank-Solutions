@@ -25,7 +25,12 @@
 var NAVTREE =
 [
   [ "Hackerrank-Solutions", "index.html", [
-    [ "Hackerrank-Solutions", "md__r_e_a_d_m_e.html", null ],
+    [ "Hackerrank-Solutions", "md__r_e_a_d_m_e.html", [
+      [ "To run the examples:", "md__r_e_a_d_m_e.html#autotoc_md1", null ],
+      [ "Folder Structure:", "md__r_e_a_d_m_e.html#autotoc_md2", null ],
+      [ "Table of Contents:", "md__r_e_a_d_m_e.html#autotoc_md3", null ],
+      [ "Debug Info", "md__r_e_a_d_m_e.html#autotoc_md4", null ]
+    ] ],
     [ "Files", "files.html", [
       [ "File List", "files.html", "files_dup" ],
       [ "File Members", "globals.html", [
@@ -39,7 +44,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_organize_container_8h.html"
+"_bigger_is_greater_8h.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -92,7 +92,18 @@ $(document).ready(function(){initNavTree('md__r_e_a_d_m_e.html',''); initResizab
   <div class="headertitle"><div class="title">Hackerrank-Solutions </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><table class="markdownTable">
+<div class="textblock"><h1><a class="anchor" id="autotoc_md1"></a>
+To run the examples:</h1>
+<ul>
+<li>Create Visual Studio solution: simply run "cmake ." at root directory level. (CMake version 3.5 or greater needed)</li>
+<li>Visual Studio sln file "Hackerrank-Solution.sln" is generated at root folder.</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md2"></a>
+Folder Structure:</h1>
+<p>project/ ├── app/ │ ├── <a class="el" href="main_8cpp.html" title="Entry Point. Calls to multiple hackkerrank problems.">main.cpp</a> │ └── CMakeLists.txt ├── libs/ │ ├── Problem_1 | | ├── problem_1.cpp | | ├── problem_1.h | | └── CMakeLists.txt | ├── Problem_2 | | ├── problem_2.cpp | | ├── problem_2.h | | └── CMakeLists.txt │ ├── Problem_3 │ └── ... ├── docs | └── html | └── pages.html ├── CMakeLists.txt └── README.md</p>
+<h1><a class="anchor" id="autotoc_md3"></a>
+Table of Contents:</h1>
+<table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Questions   </th><th class="markdownTableHeadNone">Solution    </th></tr>
 <tr class="markdownTableRowOdd">
@@ -100,6 +111,12 @@ $(document).ready(function(){initNavTree('md__r_e_a_d_m_e.html',''); initResizab
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><a href="https://www.hackerrank.com/challenges/organizing-containers-of-balls/problem">Organizing Container of Balls</a>   </td><td class="markdownTableBodyNone"><a href="https://github.com/akhilesh-rai/Hackerrank-Solutions/tree/main/libs/Algorithms/Implementation/OrganizeContainer">OrganizeContainer.cpp</a>   </td></tr>
 </table>
+<h1><a class="anchor" id="autotoc_md4"></a>
+Debug Info</h1>
+<ul>
+<li>Many problems have debug code disbaled by predompiler define called "DEBUG", defined/commented out in the respective .h file</li>
+<li>You can use it to print additional useful info into the console </li>
+</ul>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

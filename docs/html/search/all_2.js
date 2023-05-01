@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['hackerrank_2dsolutions_0',['Hackerrank-Solutions',['../md__r_e_a_d_m_e.html',1,'']]]
+  ['east_0',['EAST',['../_queens_attack2_8h.html#a224b9163917ac32fc95a60d8c1eec3aaa45ac78bf3d4882ac520f4e7fb08d55c5',1,'QueensAttack2.h']]]
 ];

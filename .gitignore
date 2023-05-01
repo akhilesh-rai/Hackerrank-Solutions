@@ -21,14 +21,8 @@
 *.out
 *.o
 *.obj
-*.log
-*.tlog
-*.pdb
-*.stamp
-*.depend
-*.recipe
-*.ilk
-*.lib
 
 # Visual Studio specific folders
 .vs
+
+/build
