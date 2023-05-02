@@ -42,5 +42,5 @@
 | [Grid Search](https://www.hackerrank.com/challenges/the-grid-search/problem) | [GridSearch.cpp](https://github.com/akhilesh-rai/Hackerrank-Solutions/tree/main/libs/Algorithms/Implementation/GridSearch) |
 
 ## Debug Info
-- Many problems have debug code disbaled by predompiler define called "DEBUG", defined/commented out in the respective .h file
+- Many problems have debug code disabled by a precompiler define called "DEBUG", defined/commented out in the respective .h file
 - You can use it to print additional useful info into the console
