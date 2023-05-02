@@ -8,6 +8,7 @@
 #include"../libs/Algorithms/Implementation/OrganizeContainer/OrganizeContainer.h"
 #include"../libs/Algorithms/Implementation/BiggerIsGreater/BiggerIsGreater.h"
 #include"../libs/Algorithms/Implementation/GridSearch/GridSearch.h"
+#include"../libs/Algorithms/Implementation/Bomberman/Bomberman.h"
 
 using namespace std;
 
@@ -35,5 +36,20 @@ int main()
     cout << "Grid Search: " << gridSearch(G1, P1)<<endl;
     vector<string> P2 = { {2,3},{7,8} };
     cout << "Grid Search: " << gridSearch(G1, P2)<<endl<<endl;
+
+    /*Bomber Man*/
+    vector<string> res = bomberMan(3,{"..O.","...."});
+    for (string in : res)
+    {
+        cout << in << endl;
+    }
+    cout << endl << endl;
+    vector<string> res1 = bomberMan(3, { ".......","...O...","....O..",".......","OO.....","OO....." });
+    for (string in : res1)
+    {
+        cout << in << endl;
+    }
+    cout << endl << endl;
+
 
 }
