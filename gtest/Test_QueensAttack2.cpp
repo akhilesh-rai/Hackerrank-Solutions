@@ -1,4 +1,4 @@
-#include"..\libs\Algorithms\Implementation\QueensAttack2\QueensAttack2.h"
+#include"../libs/Algorithms/Implementation/QueensAttack2/QueensAttack2.h"
 #include "gtest/gtest.h"
 
 TEST(TestQueensAttack2, QueenAtLeftBottomCornerNoObstacles) {

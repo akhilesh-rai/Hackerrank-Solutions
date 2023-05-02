@@ -4,10 +4,10 @@
  */
 #include <iostream>
 
-#include"..\libs\Algorithms\Implementation\QueensAttack2\QueensAttack2.h"
-#include"..\libs\Algorithms\Implementation\OrganizeContainer\OrganizeContainer.h"
-#include"..\libs\Algorithms\Implementation\BiggerIsGreater\BiggerIsGreater.h"
-#include"..\libs\Algorithms\Implementation\GridSearch\GridSearch.h"
+#include"../libs/Algorithms/Implementation/QueensAttack2/QueensAttack2.h"
+#include"../libs/Algorithms/Implementation/OrganizeContainer/OrganizeContainer.h"
+#include"../libs/Algorithms/Implementation/BiggerIsGreater/BiggerIsGreater.h"
+#include"../libs/Algorithms/Implementation/GridSearch/GridSearch.h"
 
 using namespace std;
 

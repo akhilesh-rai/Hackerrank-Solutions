@@ -1,4 +1,4 @@
-#include"..\libs\Algorithms\Implementation\GridSearch\GridSearch.h"
+#include"../libs/Algorithms/Implementation/GridSearch/GridSearch.h"
 #include "gtest/gtest.h"
 
 TEST(TestGridSearch, NoPatternMatch) {

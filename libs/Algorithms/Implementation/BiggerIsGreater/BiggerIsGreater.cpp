@@ -29,7 +29,7 @@ string biggerIsGreater(string w) {
     cout << endl;
 #endif // DEBUG
 
-    int len = w.size();
+    int len = static_cast<int>(w.size());
     for (int i = len-1; i >= 1; i--)
     {
         for (int j = i-1; j >= 0; j--)

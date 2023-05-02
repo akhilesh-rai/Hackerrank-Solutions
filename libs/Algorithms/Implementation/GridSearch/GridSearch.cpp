@@ -7,8 +7,8 @@
 string gridSearch(vector<string> G, vector<string> P) 
 {
     string res = "NO";
-    int lenG = G.size();
-    int lenP = P.size();
+    int lenG = static_cast<int>(G.size());
+    int lenP = static_cast<int>(P.size());
     vector<size_t> indices;
 
     bool found = false;

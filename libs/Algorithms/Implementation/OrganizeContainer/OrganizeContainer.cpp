@@ -4,8 +4,8 @@ string organizingContainers(vector<vector<int>> container)
 {
 	string res = "Impossible";
 
-	const int Containers = container.size();
-	const int Colors     = container.size();
+	const int Containers = static_cast<int>(container.size());
+	const int Colors     = static_cast<int>(container.size());
 
 	vector<int> contSize(Containers, 0);
 	vector<int> typSize(Colors, 0);

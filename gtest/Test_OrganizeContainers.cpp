@@ -1,4 +1,4 @@
-#include"..\libs\Algorithms\Implementation\OrganizeContainer\OrganizeContainer.h"
+#include"../libs/Algorithms/Implementation/OrganizeContainer/OrganizeContainer.h"
 #include "gtest/gtest.h"
 
 TEST(TestOrganizeContainer, Possible_2Container) {
