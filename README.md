@@ -9,11 +9,11 @@
 ## Folder Structure:
     project/
     ├── app/
-    │   ├── main.cpp
+    │   ├── main.cpp             -> entry point
     │   └── CMakeLists.txt
-    ├── libs/
-    │   ├── Problem_1
-    |   |    ├── problem_1.cpp
+    ├── libs/                    -> solution to problems
+    │   ├── Problem_1            
+    |   |    ├── problem_1.cpp 
     |   |    ├── problem_1.h
     |   |    └── CMakeLists.txt
     |   ├── Problem_2
@@ -22,7 +22,12 @@
     |   |    └── CMakeLists.txt
     │   ├── Problem_3
     │   └── ...
-    ├── docs
+    ├── gtest/                    -> unit tests
+    |   ├── main.cpp             
+    |   ├── test_problem1.cpp  
+    |   ├── test_problem2.cpp  
+    |   └── ...  
+    ├── docs                      -> doxygen docuemnts explaning the solution approach
     |   └── html
     |         └── pages.html
     ├── CMakeLists.txt
@@ -37,5 +42,5 @@
 | [Grid Search](https://www.hackerrank.com/challenges/the-grid-search/problem) | [GridSearch.cpp](https://github.com/akhilesh-rai/Hackerrank-Solutions/tree/main/libs/Algorithms/Implementation/GridSearch) |
 
 ## Debug Info
-- Many problems have debug code disbaled by predompiler define called "DEBUG", defined/commented out in the respective .h file
+- Many problems have debug code disabled by a precompiler define called "DEBUG", defined/commented out in the respective .h file
 - You can use it to print additional useful info into the console
