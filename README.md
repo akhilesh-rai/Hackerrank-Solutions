@@ -9,11 +9,11 @@
 ## Folder Structure:
     project/
     ├── app/
-    │   ├── main.cpp
+    │   ├── main.cpp             -> entry point
     │   └── CMakeLists.txt
-    ├── libs/
-    │   ├── Problem_1
-    |   |    ├── problem_1.cpp
+    ├── libs/                    -> solution to problems
+    │   ├── Problem_1            
+    |   |    ├── problem_1.cpp 
     |   |    ├── problem_1.h
     |   |    └── CMakeLists.txt
     |   ├── Problem_2
@@ -22,7 +22,12 @@
     |   |    └── CMakeLists.txt
     │   ├── Problem_3
     │   └── ...
-    ├── docs
+    ├── gtest/                    -> unit tests
+    |   ├── main.cpp             
+    |   ├── test_problem1.cpp  
+    |   ├── test_problem2.cpp  
+    |   └── ...  
+    ├── docs                      -> doxygen docuemnts explaning the solution approach
     |   └── html
     |         └── pages.html
     ├── CMakeLists.txt
