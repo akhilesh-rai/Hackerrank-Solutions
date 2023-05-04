@@ -41,6 +41,7 @@
 | [Organizing Container of Balls](https://www.hackerrank.com/challenges/organizing-containers-of-balls/problem) | [OrganizeContainer.cpp](https://github.com/akhilesh-rai/Hackerrank-Solutions/tree/main/libs/Algorithms/Implementation/OrganizeContainer) |
 | [Grid Search](https://www.hackerrank.com/challenges/the-grid-search/problem) | [GridSearch.cpp](https://github.com/akhilesh-rai/Hackerrank-Solutions/tree/main/libs/Algorithms/Implementation/GridSearch) |
 | [Bomberman](https://www.hackerrank.com/challenges/bomber-man/problem) | [Bomberman.cpp](https://github.com/akhilesh-rai/Hackerrank-Solutions/tree/main/libs/Algorithms/Implementation/Bomberman) |
+| [AlmostSorted](https://www.hackerrank.com/challenges/almost-sorted/problem) | [AlmostSorted.cpp](https://github.com/akhilesh-rai/Hackerrank-Solutions/tree/main/libs/Algorithms/Implementation/AlmostSorted) |
 
 ## Debug Info
 - Many problems have debug code disabled by a precompiler define called "DEBUG", defined/commented out in the respective .h file
