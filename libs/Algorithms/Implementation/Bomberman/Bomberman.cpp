@@ -3,7 +3,7 @@
 /****************************** Local Function Declarations *******************************************/
 static vector<int> findLocs(string s, char c);
 
-static vector<Point> findCellWithBombs(vector<string> grid);
+static vector<Point> findCellWithBombs(vector<string>& grid);
 
 static void fillUpGrid(vector<string>& grid);
 
@@ -16,17 +16,16 @@ vector<string> bomberMan(int n, vector<string> grid) {
     }
     const int gridWidth = static_cast<int>(grid[0].size());
     string inner(gridWidth,'.');
-    vector<string> res(gridHeight, inner);
+    vector<string> res = grid;
 
     if (n <= 1)
     {
-        res = grid;
         return res;
     }
     else
     {
         int time = 2;
-        vector<Point> cellWithBomb = findCellWithBombs(grid);
+        vector<Point> cellWithBomb = findCellWithBombs(res);
 
         while (time <= n)
         {                 
@@ -34,35 +33,31 @@ vector<string> bomberMan(int n, vector<string> grid) {
             {
                 for (Point p : cellWithBomb)
                 {
-                    grid[p.i][p.j] = '.';
+                    res[p.i][p.j] = '.';
                     if (p.i - 1 >= 0)
                     {
-                        grid[p.i - 1][p.j] = '.';
+                        res[p.i - 1][p.j] = '.';
                     }
                     if (p.i + 1 < gridHeight)
                     {
-                        grid[p.i + 1][p.j] = '.';
+                        res[p.i + 1][p.j] = '.';
                     }
                     if (p.j - 1 >= 0)
                     {
-                        grid[p.i][p.j - 1] = '.';
+                        res[p.i][p.j - 1] = '.';
                     }
                     if (p.j + 1 < gridWidth)
                     {
-                        grid[p.i][p.j + 1] = '.';
+                        res[p.i][p.j + 1] = '.';
                     }
                 }
 
-                cellWithBomb = findCellWithBombs(grid);
-     
-                res = grid;
+                cellWithBomb = findCellWithBombs(res);
             }
             else //even time == fill up time
             {
-                fillUpGrid(grid);
-                res = grid;
+                fillUpGrid(res);
             }
-
             time++;
         }
     }
@@ -86,7 +81,7 @@ static vector<int> findLocs(string s,char c)
     return res;
 }
 
-static vector<Point> findCellWithBombs(vector<string> grid)
+static vector<Point> findCellWithBombs(vector<string>& grid)
 {
     vector<Point> cellWithBomb;
     int stringNum = 0;

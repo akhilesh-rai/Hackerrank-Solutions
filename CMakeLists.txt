@@ -7,6 +7,7 @@ add_subdirectory(libs/Algorithms/Implementation/OrganizeContainer)
 add_subdirectory(libs/Algorithms/Implementation/BiggerIsGreater)
 add_subdirectory(libs/Algorithms/Implementation/GridSearch)
 add_subdirectory(libs/Algorithms/Implementation/Bomberman)
+add_subdirectory(libs/Algorithms/Implementation/AlmostSorted)
 
 add_subdirectory(app)
 

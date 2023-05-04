@@ -9,6 +9,7 @@
 #include"../libs/Algorithms/Implementation/BiggerIsGreater/BiggerIsGreater.h"
 #include"../libs/Algorithms/Implementation/GridSearch/GridSearch.h"
 #include"../libs/Algorithms/Implementation/Bomberman/Bomberman.h"
+#include"../libs/Algorithms/Implementation/AlmostSorted/AlmostSorted.h"
 
 using namespace std;
 
@@ -17,14 +18,10 @@ using namespace std;
 int main()
 {
     /*Queen Attack 2*/
-    //cout << "Queen Attack 2: " << queensAttack(5, 3, 4, 3, { {5,5},{4,2},{2,3} });
-    //cout << "Queen Attack 2: " << queensAttack(4, 0, 4, 4, { });
     cout << "Queen Attack 2: " << queensAttack(8, 0, 1, 1, { }) << endl <<endl;
 
     /* Organize Container of Balls*/
     vector<vector<int>> container = { {999336263,998799923},{998799923,999763019} };
-    //vector<vector<int>> container = { {997612619, 934920795, 998879231, 999926463},{960369681, 997828120, 999792735, 979622676},{ 999013654, 998634077, 997988323, 958769423 },{ 997409523, 999301350, 940952923, 993020546} };
-
     cout << "Organizing container of balls: " << organizingContainers(container) << endl << endl;
 
     /*Bigger is Greater*/
@@ -34,22 +31,19 @@ int main()
     vector<string> G1 = { {1,2,3,4,5},{6,7,8,9,10},{11,12,13,14,15} };
     vector<string> P1 = { {1,3},{1,8},{1,13} };
     cout << "Grid Search: " << gridSearch(G1, P1)<<endl;
-    vector<string> P2 = { {2,3},{7,8} };
-    cout << "Grid Search: " << gridSearch(G1, P2)<<endl<<endl;
 
     /*Bomber Man*/
-    vector<string> res = bomberMan(3,{"..O.","...."});
+    vector<string> res = bomberMan(3, { ".......","...O...","....O..",".......","OO.....","OO....." });
     for (string in : res)
     {
         cout << in << endl;
     }
-    cout << endl << endl;
-    vector<string> res1 = bomberMan(3, { ".......","...O...","....O..",".......","OO.....","OO....." });
-    for (string in : res1)
-    {
-        cout << in << endl;
-    }
-    cout << endl << endl;
+    cout << endl;
 
+    /*Almost Sorted*/
+    cout << "Almost Sorted " << endl;
+    vector<int> arr = { 1,5,4,3,2,6 };
+    cout<< almostSorted(arr);
+    cout << endl;
 
 }

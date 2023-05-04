@@ -2,6 +2,7 @@
 #include "Test_GridSearch.cpp"
 #include "Test_QueensAttack2.cpp"
 #include "Test_OrganizeContainers.cpp"
+#include "Test_AlmostSorted.cpp"
 
 #include "gtest/gtest.h"
 
