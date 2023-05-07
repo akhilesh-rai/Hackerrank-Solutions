@@ -1,4 +1,6 @@
 # Hackerrank-Solutions
+## Status
+[![CMake](https://github.com/akhilesh-rai/Hackerrank-Solutions/actions/workflows/cmake.yml/badge.svg)](https://github.com/akhilesh-rai/Hackerrank-Solutions/actions/workflows/cmake.yml)
 ## Building the project
  - To build the project, navigate to the project directory in a terminal and run the following commands:  
    mkdir build  
