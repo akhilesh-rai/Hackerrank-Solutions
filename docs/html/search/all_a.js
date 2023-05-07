@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['west_0',['WEST',['../_queens_attack2_8h.html#a224b9163917ac32fc95a60d8c1eec3aaa83c9f5692281bf59471b13dfddb3af91',1,'QueensAttack2.h']]]
+  ['operator_3d_3d_0',['operator==',['../classloc.html#af722ad490e7fe75b516041614dd1e0b4',1,'loc']]],
+  ['organizecontainer_2eh_1',['OrganizeContainer.h',['../_organize_container_8h.html',1,'']]],
+  ['organizingcontainers_2',['organizingContainers',['../_organize_container_8h.html#a6fd7ac1856c6105dd417fa9d70110180',1,'OrganizeContainer.cpp']]]
 ];

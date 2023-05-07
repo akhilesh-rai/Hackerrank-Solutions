@@ -25,11 +25,19 @@
 var NAVTREE =
 [
   [ "Hackerrank-Solutions", "index.html", [
-    [ "Hackerrank-Solutions", "md__r_e_a_d_m_e.html", [
-      [ "Building the project", "md__r_e_a_d_m_e.html#autotoc_md1", null ],
-      [ "Folder Structure:", "md__r_e_a_d_m_e.html#autotoc_md2", null ],
-      [ "Table of Contents:", "md__r_e_a_d_m_e.html#autotoc_md3", null ],
-      [ "Debug Info", "md__r_e_a_d_m_e.html#autotoc_md4", null ]
+    [ "Hackerrank-Solutions", "md__c___users_akhil_source_repos__hackerrank__solutions__r_e_a_d_m_e.html", [
+      [ "Building the project", "md__c___users_akhil_source_repos__hackerrank__solutions__r_e_a_d_m_e.html#autotoc_md1", null ],
+      [ "Folder Structure:", "md__c___users_akhil_source_repos__hackerrank__solutions__r_e_a_d_m_e.html#autotoc_md2", null ],
+      [ "Table of Contents:", "md__c___users_akhil_source_repos__hackerrank__solutions__r_e_a_d_m_e.html#autotoc_md3", null ],
+      [ "Debug Info", "md__c___users_akhil_source_repos__hackerrank__solutions__r_e_a_d_m_e.html#autotoc_md4", null ]
+    ] ],
+    [ "Classes", "annotated.html", [
+      [ "Class List", "annotated.html", "annotated_dup" ],
+      [ "Class Index", "classes.html", null ],
+      [ "Class Members", "functions.html", [
+        [ "All", "functions.html", null ],
+        [ "Functions", "functions_func.html", null ]
+      ] ]
     ] ],
     [ "Files", "files.html", [
       [ "File List", "files.html", "files_dup" ],
@@ -44,7 +52,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_bigger_is_greater_8h.html"
+"_almost_sorted_8h.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
