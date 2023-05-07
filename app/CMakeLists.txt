@@ -5,4 +5,5 @@ target_link_libraries(Hackerrank-Solutions
 					  BiggerIsGreater
 					  GridSearch
 					  Bomberman
-                      AlmostSorted )
+                      AlmostSorted
+					  SurfaceArea)

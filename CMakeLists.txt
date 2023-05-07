@@ -1,5 +1,8 @@
 cmake_minimum_required(VERSION 3.5)
 
+### For third party libs installed via vcpkg like eigen, sciplot etc
+#set(CMAKE_TOOLCHAIN_FILE "C:/vcpkg/scripts/buildsystems/vcpkg.cmake")
+
 project(Hackerrank-Solutions LANGUAGES CXX)
 
 add_subdirectory(libs/Algorithms/Implementation/QueensAttack2)
@@ -8,6 +11,7 @@ add_subdirectory(libs/Algorithms/Implementation/BiggerIsGreater)
 add_subdirectory(libs/Algorithms/Implementation/GridSearch)
 add_subdirectory(libs/Algorithms/Implementation/Bomberman)
 add_subdirectory(libs/Algorithms/Implementation/AlmostSorted)
+add_subdirectory(libs/Algorithms/Implementation/SurfaceArea)
 
 add_subdirectory(app)
 
@@ -28,5 +32,3 @@ enable_testing()
 
 add_subdirectory(gtest)
 ################ G Test End ############################
-
-

@@ -10,8 +10,13 @@
 #include"../libs/Algorithms/Implementation/GridSearch/GridSearch.h"
 #include"../libs/Algorithms/Implementation/Bomberman/Bomberman.h"
 #include"../libs/Algorithms/Implementation/AlmostSorted/AlmostSorted.h"
+#include"../libs/Algorithms/Implementation/SurfaceArea/SurfaceArea.h"
+
+//#include <Eigen/Dense>
+//#include <sciplot/sciplot.hpp>
 
 using namespace std;
+//using namespace Eigen;
 
 /// @brief This is the entry point
 /// @return 0
@@ -45,5 +50,8 @@ int main()
     vector<int> arr = { 1,5,4,3,2,6 };
     cout<< almostSorted(arr);
     cout << endl;
+
+    /*3D surface Area*/
+    cout <<"3D Surface Area: "<< surfaceArea({{1,2,1},{1,1},{1}});
 
 }
