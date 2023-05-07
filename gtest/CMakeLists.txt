@@ -6,7 +6,8 @@ target_link_libraries(unitTests
 					  OrganizeContainer
 					  GridSearch
 					  BiggerIsGreater
-					  AlmostSorted )
+					  AlmostSorted
+                      SurfaceArea )
 
 include(GoogleTest)
 gtest_discover_tests(unitTests)

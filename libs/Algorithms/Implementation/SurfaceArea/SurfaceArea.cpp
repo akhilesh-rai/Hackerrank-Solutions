@@ -151,11 +151,11 @@ public:
     */
     cell* getCell(loc l)
     {
-        const int idx = cellsIdx[l];
         auto it = cellsIdx.find(l);
 
         if (it != cellsIdx.end())
         {
+            const int idx = cellsIdx[l];
             return cells[idx];
         }
         else

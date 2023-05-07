@@ -3,6 +3,7 @@
 #include "Test_QueensAttack2.cpp"
 #include "Test_OrganizeContainers.cpp"
 #include "Test_AlmostSorted.cpp"
+#include "Test_SurfaceArea.cpp"
 
 #include "gtest/gtest.h"
 
