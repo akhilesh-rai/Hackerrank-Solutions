@@ -52,6 +52,6 @@ int main()
     cout << endl;
 
     /*3D surface Area*/
-    cout <<"3D Surface Area: "<< surfaceArea({{1,2,1},{1,1},{1}});
+    cout <<"3D Surface Area: "<< surfaceArea({{1,3,4},{2,2,3},{1,2,4}});
 
 }

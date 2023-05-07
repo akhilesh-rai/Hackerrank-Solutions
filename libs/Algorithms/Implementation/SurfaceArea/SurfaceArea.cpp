@@ -1,33 +1,46 @@
+/**
+ * @file SurfaceArea.cpp
+ * @brief Solution to the hacker rank question : Queens Attack 2 is implemented here.
+ */
 #include "SurfaceArea.h"
 
 /****************************** Local Function Declarations *******************************************/
 
 
 /****************************** Function Definitions **************************************************/
-
+/**
+ * @brief class to represent the cell index. 
+ *
+ * (i => rows,j =>cols,k =>height)
+ */
 class loc {
 public:
+    /**
+    * @brief Default constructor .
+    */
     loc() : i(0), j(0), k(0) {}
+    /**
+    * @brief Construct a new loc object with the given indices .
+    *
+    * @param i row index.
+    * @param j col index.
+    * @param k height index
+    */
     loc(int a, int b, int c) : i(a), j(b), k(c) {}
 
+    /**
+    * @brief Overload equal to operator .
+    *
+    * @param other loc object being compared to
+    */
     bool operator==(const loc& other) const {
         return i == other.i && j == other.j && k == other.k;
     }
 
-    struct Hasher {
-        std::size_t operator()(const loc& key) const {
-            std::size_t seed = 0;
-            seed ^= std::hash<int>{}(key.i) + 0x9e3779b9 + (seed << 6) + (seed >> 2);
-            seed ^= std::hash<int>{}(key.j) + 0x9e3779b9 + (seed << 6) + (seed >> 2);
-            seed ^= std::hash<int>{}(key.k) + 0x9e3779b9 + (seed << 6) + (seed >> 2);
-            return seed;
-        }
-    };
-
     int i, j, k;
 };
 
-// define hash and equality functions for MyKey
+// define hash and equality functions for loc (needed for usage as keys in unordered_map)
 namespace std {
     template <>
     struct hash<loc> {
@@ -46,6 +59,12 @@ namespace std {
     };
 }
 
+/**
+ * @brief class to represent a cell.
+ *
+ * each cell has a location index -> loc
+ * and pointers to its surrounding neighbor cells
+ */
 class cell 
 {
 public:
@@ -57,63 +76,64 @@ public:
     cell* east;
     cell* west;
 
+    /**
+    * @brief Construct a new cell object with the given loc .
+    *
+    * @param l loc index of cell.
+    */
     cell(loc l)
     {
         this->l = l;
-    }
-    int getArea()
-    {
-        int area = 6;
-        if (up != nullptr)
-        {
-            area--;
-        }
-        if (down != nullptr)
-        {
-            area--;
-        }
-        if (north != nullptr)
-        {
-            area--;
-        }
-        if (south != nullptr)
-        {
-            area--;
-        }
-        if (east != nullptr)
-        {
-            area--;
-        }
-        if (west != nullptr)
-        {
-            area--;
-        }
-        return area;
+        this->up = nullptr;
+        this->down = nullptr;
+        this->north = nullptr;
+        this->south = nullptr;
+        this->east = nullptr;
+        this->west = nullptr;
     }
 };
 
+/**
+ * @brief class to represent a Toy.
+ *
+ * Each toy is made up of multiple cells by stacking on top/next to each other.
+ * H X W defines the base plate of the toy.
+ * 
+ */
 class Toy
 {
-    int H;
-    int W;
-    int surfaceArea;
-    vector<cell*> cells;
-    unordered_map<loc, int> cellsIdx;
-    unordered_map<loc, int> isOccupied;
-    void computeSurfaceArea()
-    {
-
-    }
+    int H;                   ///< base plate number of rows
+    int W;                   ///< base plate number of cols
+    int surfaceArea;         ///< surface area of toy
+    vector<cell*> cells;     ///< vector of cell pointers that make up the toy
+    unordered_map<loc, int> cellsIdx;   ///< map of loc (i,j,k) / cell to index in above "cells" vector container
+    unordered_map<loc, int> isOccupied; ///< map of loc (i,j,k) / cell to occupancy of cell
+    
 public:
+    /**
+    * @brief Construct a new Toy object with the given base plate dims .
+    *
+    * @param H base plate num of rows
+    * @param W base plate num of cols
+    */
     Toy(int H, int W)
     {
         this->H = H;
         this->W = W;
         surfaceArea = 0;
     }
+    /**
+    * @brief Add a new cell/module to the toy.
+    * 
+    * @details
+    * On adding a new cell to the toy, update the mapping of loc and vector idx of cell, and occupacy.
+    * Then update the neighborhood info of the new cell.
+    *
+    * @param newCell pointer to new cell
+    */
     void addCell(cell* newCell)
     {
-        cellsIdx[newCell->l] = static_cast<int>(cells.size());
+        cellsIdx[newCell->l]   = static_cast<int>(cells.size());
         isOccupied[newCell->l] = true;
         cells.push_back(newCell);
 
@@ -123,10 +143,12 @@ public:
         newCell->south = getCellInDir(newCell->l, dir::SOUTH);
         newCell->east  = getCellInDir(newCell->l, dir::EAST);
         newCell->west  = getCellInDir(newCell->l, dir::WEST);
-        
-        computeSurfaceArea();
     }
-
+    /**
+    * @brief Get pointer to cell given its location.
+    * @param l loc of cell
+    * @return pointer to cell
+    */
     cell* getCell(loc l)
     {
         const int idx = cellsIdx[l];
@@ -139,10 +161,15 @@ public:
         else
         {
             return nullptr;
-        }
-        
+        }        
     }
 
+    /**
+    * @brief Get pointer to neighbor cell in given direction dir.
+    * @param l loc of cell
+    * @param d dir 
+    * @return pointer to cell
+    */
     cell* getCellInDir(loc l, dir d)
     {
         loc tmp = l;
@@ -193,6 +220,11 @@ public:
         }
     }
 
+    /**
+    * @brief Count immediate neighbors for given cell.
+    * @param c cell
+    * @return number of immediate neighbors
+    */
     int countNeighbors(cell* c)
     {
         int res = 0;
@@ -224,7 +256,40 @@ public:
 
         return res;
     }
-    
+
+    /**
+    * @brief Compute surface area of Toy.
+    * @return surface area
+    */
+    int computeSurfaceArea()
+    {
+        for (auto c : cells)
+        {
+            int numNeigh = countNeighbors(c);
+
+            if (numNeigh == 0)
+            {
+                surfaceArea += 6;
+            }
+            else if (numNeigh == 1)
+            {
+                surfaceArea += 4;
+            }
+            else if (numNeigh == 2)
+            {
+                surfaceArea += 2;
+            }
+            else
+            {
+                surfaceArea += 0;
+            }
+        }
+        return surfaceArea;
+    }
+
+    /**
+    * @brief Print toy cells.
+    */
     void printToy()
     {
         for (auto i : cells)
@@ -235,8 +300,6 @@ public:
     }
 
 };
-
-
 
 int surfaceArea(vector<vector<int>> A) {
     int area = 0;
@@ -258,7 +321,11 @@ int surfaceArea(vector<vector<int>> A) {
             }            
         }
     }
+#ifdef DEBUG
     T.printToy();
+#endif // DEBUG
+    
+    area = T.computeSurfaceArea();
 
     for (auto c : holder)
     {
